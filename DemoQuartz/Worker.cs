@@ -94,10 +94,9 @@ namespace DemoQuartz
                 InstanceSettings.IsBeginingDay = false;
                 XnCodeSettings.IsChangeXnCode = false;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                _logger.LogError("Exception", ex);
             }
         }
 
